@@ -1,0 +1,15 @@
+#Expyriment 1.0.0 (Python 3.13.7), .xpe-file, coding: UTF-8
+#date: Wed Sep 17 2025 17:31:56
+#sha1: 641df9
+#modules: 
+#display: size=(800, 600), window_mode=False, opengl=2
+#os: uname_result(system='Darwin', node='MacBook-Air-de-Nicolas-2.local', release='24.6.0', version='Darwin Kernel Version 24.6.0: Mon Jul 14 11:30:34 PDT 2025; root:xnu-11417.140.69~1/RELEASE_ARM64_T8103', machine='arm64')
+Time,Type,Event,Value,Detail,Detail2
+5289,stderr,received,'Exception ignored in: <function Visual.__del__ at 0x107862f20>'
+5289,stderr,received,'Traceback (most recent call last):'
+5289,stderr,received,'  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/expyriment/stimuli/_visual.py", line 266, in __del__'
+5290,stderr,received,'    if self._compression_filename is not None:'
+5290,stderr,received,"AttributeError: 'Rectangle' object has no attribute '_compression_filename'"
+5293,stderr,received,'Traceback (most recent call last):'
+5296,stderr,received,'  File "/Users/nicolasbestauros/Documents/Progra/cogsup-prog/Assignments/week-2/Exercises/square.py", line 8, in <module>\n    square = stimuli.Rectangle(int = 50)'
+5296,stderr,received,"TypeError: Rectangle.__init__() got an unexpected keyword argument 'int'"

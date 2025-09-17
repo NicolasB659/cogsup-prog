@@ -9,14 +9,6 @@ to be) doing.
 """
 
 def input_feedback(prompt):
-    """
-    Ask the user for feedback on the guess.
-    Expected answers:
-    - 'h' if the guess is too high,
-    - 'l' if the guess is too low,
-    - 'c' if the guess is correct.
-    Keeps asking until valid input is received.
-    """
     while True:
         response = input(prompt).lower()
         if response in ('h', 'l', 'c'):
@@ -25,8 +17,8 @@ def input_feedback(prompt):
 
 def computer_guesses():
     """
-    Computer tries to guess the number you are thinking of by binary search.
-    It narrows down the range after each guess based on your feedback.
+    Computer tries to guess the number by binary search.
+    It narrows down the range after each guess based on the feedback.
     """
     low = 1            # Lower bound of search range (initially 1)
     high = 100         # Upper bound of search range (initially 100)
@@ -54,7 +46,7 @@ def computer_guesses():
             low = guess + 1
 
     # If the loop ends, it means the feedback was inconsistent or number is out of range
-    print("Hmm, something went wrong. Are you sure you thought of a number between 1 and 100 and gave correct feedback?")
+    print("Are you sure you thought of a number between 1 and 100 and gave correct feedback?")
 
 if __name__ == "__main__":
     computer_guesses()
