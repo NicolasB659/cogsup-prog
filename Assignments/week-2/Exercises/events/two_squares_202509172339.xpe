@@ -1,0 +1,11 @@
+#Expyriment 1.0.0 (Python 3.13.7), .xpe-file, coding: UTF-8
+#date: Wed Sep 17 2025 23:39:06
+#sha1: b73ccb
+#modules: 
+#display: size=(800, 600), window_mode=True, opengl=2
+#os: uname_result(system='Darwin', node='MacBook-Air-de-Nicolas-2.local', release='24.6.0', version='Darwin Kernel Version 24.6.0: Mon Jul 14 11:30:34 PDT 2025; root:xnu-11417.140.69~1/RELEASE_ARM64_T8103', machine='arm64')
+Time,Type,Event,Value,Detail,Detail2
+1053,stderr,received,'Traceback (most recent call last):'
+1053,stderr,received,'  File "/Users/nicolasbestauros/Documents/Progra/cogsup-prog/Assignments/week-2/Exercises/two_squares.py", line 8, in <module>\n    square_vert = stimuli.Rectangle((50, 50), (0,128,0), (-100, 0))'
+1053,stderr,received,'  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/expyriment/stimuli/_rectangle.py", line 57, in __init__\n    elif line_width < 0 or line_width >= min(self._size):\n         ^^^^^^^^^^^^^^'
+1053,stderr,received,"TypeError: '<' not supported between instances of 'tuple' and 'int'"

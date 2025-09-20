@@ -5,8 +5,8 @@ exp = design.Experiment(name = "2 Squares")
 control.initialize(exp)
 
 fixation = stimuli.FixCross()
-square_vert = stimuli.Rectangle((50, 50), (0,128,0))
-square_red = stimuli.Rectangle((50, 50), (0,0,225))
+square_vert = stimuli.Rectangle((50, 50), (0,128,0), position=(-100, 0))
+square_red = stimuli.Rectangle((50, 50), (250,0,0), position=(100, 0))
 
 control.start(subject_id=1)
 
